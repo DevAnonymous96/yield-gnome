@@ -17,16 +17,16 @@ export const Header = () => {
 
           <nav className="hidden md:flex items-center space-x-6">
             <a
-              href="#dashboard"
+              href="/"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Dashboard
+              Home
             </a>
             <a
-              href="#pools"
+              href="/yield"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
-              Yield Pools
+              Yield Vaults
             </a>
             <a
               href="#ai-agent"
@@ -41,7 +41,7 @@ export const Header = () => {
               Portfolio
             </a>
             <a
-              href="/"
+              href="/docs"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Docs
@@ -49,9 +49,11 @@ export const Header = () => {
           </nav>
 
           <div className="flex items-center space-x-4">
-            <Button variant="hero" size="sm">
-              <Zap className="h-4 w-4" />
-              Start Earning
+            <Button variant="hero" size="sm" asChild>
+              <a href="/yield">
+                <Zap className="h-4 w-4" />
+                Start Earning
+              </a>
             </Button>
           </div>
         </div>

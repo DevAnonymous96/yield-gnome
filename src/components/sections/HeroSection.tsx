@@ -30,9 +30,11 @@ export const HeroSection = () => {
             </div>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button variant="hero" size="lg" className="text-lg px-8 py-6">
-                <Zap className="h-5 w-5" />
-                Start Earning Now
+              <Button variant="hero" size="lg" className="text-lg px-8 py-6" asChild>
+                <a href="/yield">
+                  <Zap className="h-5 w-5" />
+                  Start Earning Now
+                </a>
               </Button>
             </div>
           </div>

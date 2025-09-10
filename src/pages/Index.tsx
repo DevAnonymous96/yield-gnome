@@ -1,8 +1,10 @@
 import { Header } from "@/components/layout/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { HowItWorks } from "@/components/sections/HowItWorks";
 import { SponsorsSection } from "@/components/sections/SponsorsSection";
 import { YieldDashboard } from "@/components/sections/YieldDashboard";
 import { AIAgentChat } from "@/components/sections/AIAgentChat";
+import { Footer } from "@/components/layout/Footer";
 
 const Index = () => {
   return (
@@ -10,10 +12,12 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
-        <YieldDashboard />
+        <HowItWorks />
         <SponsorsSection />
+        <YieldDashboard />
         <AIAgentChat />
       </main>
+      <Footer />
     </div>
   );
 };
