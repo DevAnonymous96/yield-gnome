@@ -1,11 +1,11 @@
 const sponsors = [
-  { name: "1inch", logo: "/public/1inch-1inch-logo.svg" },
-  { name: "Pyth Network", logo: "/public/pyth-network-pyth-logo.svg" },
-  { name: "Hedera", logo: "/public/hedera-hbar-logo.svg" },
-  { name: "Polygon", logo: "/public/polygon-matic-logo.svg" },
-  { name: "Aave", logo: "/public/aave-aave-logo.svg" },
-  { name: "Uniswap Foundation", logo: "/public/uniswap-uni-logo.svg" },
-  { name: "The Graph", logo: "/public/the-graph-grt-logo.svg" },
+  { name: "1inch", logo: "/1inch-1inch-logo.svg" },
+  { name: "Pyth Network", logo: "/pyth-network-pyth-logo.svg" },
+  { name: "Hedera", logo: "/hedera-hbar-logo.svg" },
+  { name: "Polygon", logo: "/polygon-matic-logo.svg" },
+  { name: "Aave", logo: "/aave-aave-logo.svg" },
+  { name: "Uniswap Foundation", logo: "/uniswap-uni-logo.svg" },
+  { name: "The Graph", logo: "/the-graph-grt-logo.svg" },
 ];
 
 export const SponsorsSection = () => {
