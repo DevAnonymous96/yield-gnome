@@ -95,68 +95,6 @@ export const YieldDashboard = () => {
           </p>
         </div>
         
-        <div className="grid gap-6 mb-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="glass card-shadow">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm font-medium text-muted-foreground">
-                  Total Portfolio Value
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">$125,420.50</div>
-                <div className="flex items-center space-x-1 text-success text-sm">
-                  <TrendingUp className="h-4 w-4" />
-                  <span>+8.3% (24h)</span>
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="glass card-shadow">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm font-medium text-muted-foreground">
-                  Active Positions
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">12</div>
-                <div className="text-sm text-muted-foreground">
-                  Across 8 protocols
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="glass card-shadow">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm font-medium text-muted-foreground">
-                  Avg APY
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold text-success">16.7%</div>
-                <div className="text-sm text-muted-foreground">
-                  Risk-adjusted
-                </div>
-              </CardContent>
-            </Card>
-            
-            <Card className="glass card-shadow">
-              <CardHeader className="pb-2">
-                <CardTitle className="text-sm font-medium text-muted-foreground">
-                  24h Earnings
-                </CardTitle>
-              </CardHeader>
-              <CardContent>
-                <div className="text-2xl font-bold">$47.82</div>
-                <div className="flex items-center space-x-1 text-success text-sm">
-                  <TrendingUp className="h-4 w-4" />
-                  <span>+12.4%</span>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-        
         <Card className="glass card-shadow">
           <CardHeader>
             <div className="flex items-center justify-between">

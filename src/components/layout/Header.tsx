@@ -10,33 +10,45 @@ export const Header = () => {
             <div className="flex items-center space-x-2">
               <Bot className="h-8 w-8 text-primary animate-float" />
               <span className="text-xl font-bold gradient-text">
-                YieldBot AI
+                YieldCraft AI
               </span>
             </div>
           </div>
-          
+
           <nav className="hidden md:flex items-center space-x-6">
-            <a href="#dashboard" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#dashboard"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Dashboard
             </a>
-            <a href="#pools" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#pools"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Yield Pools
             </a>
-            <a href="#ai-agent" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#ai-agent"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               AI Agent
             </a>
-            <a href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="#portfolio"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Portfolio
             </a>
-            <a href="/docs" className="text-muted-foreground hover:text-foreground transition-colors">
+            <a
+              href="/"
+              className="text-muted-foreground hover:text-foreground transition-colors"
+            >
               Docs
             </a>
           </nav>
-          
+
           <div className="flex items-center space-x-4">
-            <Button variant="glass" size="sm">
-              Connect Wallet
-            </Button>
             <Button variant="hero" size="sm">
               <Zap className="h-4 w-4" />
               Start Earning

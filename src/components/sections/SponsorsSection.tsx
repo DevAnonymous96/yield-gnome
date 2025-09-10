@@ -1,27 +1,12 @@
 import { Button } from "@/components/ui/button";
 
 const sponsors = [
-  { name: "1inch", amount: "$61,000", logo: "🔄" },
-  { name: "Rootstock", amount: "$10,000", logo: "🟡" },
-  { name: "Flow", amount: "$10,000", logo: "🌊" },
-  { name: "Pyth Network", amount: "$10,000", logo: "🔮" },
-  { name: "Hedera", amount: "$10,000", logo: "⬡" },
-  { name: "Polygon", amount: "$10,000", logo: "🔗" },
-  { name: "ENS", amount: "$10,000", logo: "◆" },
-  { name: "World", amount: "$10,000", logo: "🌍" },
-  { name: "Uniswap Foundation", amount: "$10,000", logo: "🦄" },
-  { name: "Protocol Labs", amount: "$10,000", logo: "⚡" },
-  { name: "Citrea", amount: "$10,000", logo: "🏛️" },
-  { name: "The Graph", amount: "$10,000", logo: "📊" },
-  { name: "Artificial Superintelligence Alliance", amount: "$10,000", logo: "🤖" },
-  { name: "Paypal", amount: "$10,000", logo: "💳" },
-  { name: "0G", amount: "$10,000", logo: "⭕" },
-  { name: "Self", amount: "$10,000", logo: "🔄" },
-  { name: "Fluence", amount: "$5,000", logo: "💧" },
-  { name: "Kadena", amount: "$5,000", logo: "🔷" },
-  { name: "Ethereum Foundation", amount: "$5,000", logo: "💎" },
-  { name: "Walrus", amount: "$5,000", logo: "🐋" },
-  { name: "Integra", amount: "$1,000", logo: "🔗" },
+  { name: "1inch", logo: "🔄" },
+  { name: "Pyth Network", logo: "🔮" },
+  { name: "Hedera", logo: "⬡" },
+  { name: "Polygon", logo: "🔗" },
+  { name: "Uniswap Foundation", logo: "🦄" },
+  { name: "The Graph", logo: "📊" }
 ];
 
 export const SponsorsSection = () => {
@@ -36,7 +21,7 @@ export const SponsorsSection = () => {
             Supporting the future of DeFi yield optimization
           </p>
         </div>
-        
+
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4 mb-8">
           {sponsors.map((sponsor) => (
             <div
@@ -48,18 +33,9 @@ export const SponsorsSection = () => {
                 <h3 className="font-semibold text-sm mb-1 text-foreground">
                   {sponsor.name}
                 </h3>
-                <p className="text-primary font-bold text-xs">
-                  {sponsor.amount}
-                </p>
               </div>
             </div>
           ))}
-        </div>
-        
-        <div className="text-center">
-          <Button variant="hero" size="lg">
-            See prize details →
-          </Button>
         </div>
       </div>
     </section>
