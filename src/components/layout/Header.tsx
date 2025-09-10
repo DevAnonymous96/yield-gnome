@@ -28,6 +28,9 @@ export const Header = () => {
             <a href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">
               Portfolio
             </a>
+            <a href="/docs" className="text-muted-foreground hover:text-foreground transition-colors">
+              Docs
+            </a>
           </nav>
           
           <div className="flex items-center space-x-4">
