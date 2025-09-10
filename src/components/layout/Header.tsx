@@ -1,54 +1,33 @@
 import { Button } from "@/components/ui/button";
 import { Zap, Bot, TrendingUp } from "lucide-react";
-import { Link, useLocation } from "react-router-dom";
 
 export const Header = () => {
-  const location = useLocation();
-  
-  const isActive = (path: string) => location.pathname === path;
-  
   return (
     <header className="glass border-b border-primary/20 sticky top-0 z-50">
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link to="/" className="flex items-center space-x-2">
-            <Bot className="h-8 w-8 text-primary animate-float" />
-            <span className="text-xl font-bold gradient-text">
-              YieldBot AI
-            </span>
-          </Link>
+          <div className="flex items-center space-x-2">
+            <div className="flex items-center space-x-2">
+              <Bot className="h-8 w-8 text-primary animate-float" />
+              <span className="text-xl font-bold gradient-text">
+                YieldBot AI
+              </span>
+            </div>
+          </div>
           
           <nav className="hidden md:flex items-center space-x-6">
-            <Link 
-              to="/dashboard" 
-              className={`transition-colors ${
-                isActive('/dashboard') 
-                  ? 'text-primary font-medium' 
-                  : 'text-muted-foreground hover:text-foreground'
-              }`}
-            >
+            <a href="#dashboard" className="text-muted-foreground hover:text-foreground transition-colors">
               Dashboard
-            </Link>
-            <Link 
-              to="/withdraw-deposit" 
-              className={`transition-colors ${
-                isActive('/withdraw-deposit') 
-                  ? 'text-primary font-medium' 
-                  : 'text-muted-foreground hover:text-foreground'
-              }`}
-            >
-              Deposit/Withdraw
-            </Link>
-            <Link 
-              to="/ai-agent" 
-              className={`transition-colors ${
-                isActive('/ai-agent') 
-                  ? 'text-primary font-medium' 
-                  : 'text-muted-foreground hover:text-foreground'
-              }`}
-            >
+            </a>
+            <a href="#pools" className="text-muted-foreground hover:text-foreground transition-colors">
+              Yield Pools
+            </a>
+            <a href="#ai-agent" className="text-muted-foreground hover:text-foreground transition-colors">
               AI Agent
-            </Link>
+            </a>
+            <a href="#portfolio" className="text-muted-foreground hover:text-foreground transition-colors">
+              Portfolio
+            </a>
           </nav>
           
           <div className="flex items-center space-x-4">

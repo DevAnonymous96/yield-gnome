@@ -1,5 +1,7 @@
 import { Header } from "@/components/layout/Header";
 import { HeroSection } from "@/components/sections/HeroSection";
+import { YieldDashboard } from "@/components/sections/YieldDashboard";
+import { AIAgentChat } from "@/components/sections/AIAgentChat";
 
 const Index = () => {
   return (
@@ -7,6 +9,8 @@ const Index = () => {
       <Header />
       <main>
         <HeroSection />
+        <YieldDashboard />
+        <AIAgentChat />
       </main>
     </div>
   );
