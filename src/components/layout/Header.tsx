@@ -22,12 +22,12 @@ export const Header = () => {
             >
               Home
             </a>
-            <a
+            {/* <a
               href="/yield"
               className="text-muted-foreground hover:text-foreground transition-colors"
             >
               Yield Vaults
-            </a>
+            </a> */}
             <a
               href="#ai-agent"
               className="text-muted-foreground hover:text-foreground transition-colors"

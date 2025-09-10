@@ -84,7 +84,7 @@ export const AIAgentChat = () => {
   };
 
   return (
-    <section id="ai-agent" className="py-20">
+    <section id="ai-agent" className="py-20 mb-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <div className="flex items-center justify-center space-x-2 text-primary mb-4">

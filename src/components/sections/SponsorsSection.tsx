@@ -1,12 +1,11 @@
-import { Button } from "@/components/ui/button";
-
 const sponsors = [
-  { name: "1inch", logo: "🔄" },
-  { name: "Pyth Network", logo: "🔮" },
-  { name: "Hedera", logo: "⬡" },
-  { name: "Polygon", logo: "🔗" },
-  { name: "Uniswap Foundation", logo: "🦄" },
-  { name: "The Graph", logo: "📊" }
+  { name: "1inch", logo: "/public/1inch-1inch-logo.svg" },
+  { name: "Pyth Network", logo: "/public/pyth-network-pyth-logo.svg" },
+  { name: "Hedera", logo: "/public/hedera-hbar-logo.svg" },
+  { name: "Polygon", logo: "/public/polygon-matic-logo.svg" },
+  { name: "Aave", logo: "/public/aave-aave-logo.svg" },
+  { name: "Uniswap Foundation", logo: "/public/uniswap-uni-logo.svg" },
+  { name: "The Graph", logo: "/public/the-graph-grt-logo.svg" },
 ];
 
 export const SponsorsSection = () => {
@@ -22,15 +21,21 @@ export const SponsorsSection = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4 mb-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 xl:grid-cols-6 gap-4">
           {sponsors.map((sponsor) => (
             <div
               key={sponsor.name}
               className="glass rounded-lg p-4 hover:scale-105 transition-transform duration-300 border border-primary/20"
             >
-              <div className="text-center">
-                <div className="text-2xl mb-2">{sponsor.logo}</div>
-                <h3 className="font-semibold text-sm mb-1 text-foreground">
+              <div className="flex text-center items-center justify-center space-x-4">
+                <img
+                  src={sponsor.logo}
+                  alt={sponsor.name}
+                  width={40}
+                  height={40}
+                />
+                {/* </div> */}
+                <h3 className="font-semibold text-foreground">
                   {sponsor.name}
                 </h3>
               </div>
